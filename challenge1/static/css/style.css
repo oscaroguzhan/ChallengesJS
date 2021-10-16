@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+}
+
+.flex-container {
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+#userAge {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+#flex-box-contanier-1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-evenly;
+    border: 1px solid black;
+    background-color:black;
+}
+
+#flex-box-result {
+    color: #fff;
+}
