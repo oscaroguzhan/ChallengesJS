@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap');
+:root {
+    /* color variabels */
+    --white : #fff;
+    --black : #1c2b2d;
+    --color-primary: #9d0191;
+    --color-sec : #db6400;
+    --light-blue: rgb(0, 102, 255);
+    --dark-grey : rgb(94, 93, 93);
+    --orangered : orangered;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-blue);
+    
+}
+footer .footer-span {
+    color: var(--color-primary);
+}
+footer p {
+    color:#1c2b2d
+}
+
+/* start styling */
+.container {
+    
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.quiz-box {
+    border: 2px solid black;
+    width: 600px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 1rem 3rem 3rem 3rem;
+    border-radius: 5px;
+}
+.quiz-box h1 {
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 3px;
+}
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.quiz-header #question-progress {
+    color: var(--dark-grey);
+    font-size: 1.1rem;
+    font-weight: 700;
+    
+}
+.quiz-header #countdown {
+    border: 1px solid black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background-color: var(--orangered);
+    margin: 1px;
+    color: var(--white);
+    border-radius: 3px;
+    padding: 5px;
+}
+.quiz-box #question {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.buttons {
+    margin: 1.5rem 0 4rem 0;
+}
+.btn {
+    text-align: left;
+    background-color: #ddd;
+    width: 100%;
+    font-size: 1.2rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    margin: 7px 0;
+    padding: 1rem;
+    outline: none;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+.btn:active {
+    background-color: var(--color-sec);
+}
+/* This will be added via js */
+#score {
+    color: var(--black);
+    text-align: center;
+    font-size:1.4rem;
+    margin-bottom: 3rem;
+}
+/* This will be added via js */
+.quiz-repeat {
+    text-align: center;
+    margin: 1rem auto;
+}
+/* This will be added via js */
+.quiz-repeat a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--orangered);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: 0.4s;
+    
+}
+.quiz-repeat a:hover {
+    background-color: var(--color-primary);
+}
